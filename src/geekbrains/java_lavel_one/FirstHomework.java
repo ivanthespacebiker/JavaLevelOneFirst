@@ -14,16 +14,11 @@ public class FirstHomework {
     }
 
     private static boolean interval(int a){
-        if (a >= 10 && a <= 20) {
-            return true;
-        }
-        else return false;
+        return (a >= 10 && a <= 20);
     }
 
     private static boolean isLeap(int Year){
-        if (Year % 4 == 0 && Year % 100 != 0 || Year % 400 == 0) {
-            return true;
-        } else return false;
+        return (Year % 4 == 0 && Year % 100 != 0 || Year % 400 == 0);
     }
 
     public static void main(String[] args) {
@@ -33,15 +28,11 @@ public class FirstHomework {
 
         if (interval(IntVariable)){
             System.out.println("Число " + IntVariable + " входит в интервал 10..20");
-        } else {
-            System.out.println("Число " + IntVariable + " не входит в интервал 10..20");
-        }
+        } else System.out.println("Число " + IntVariable + " не входит в интервал 10..20");
 
         if (isLeap(Year)){
             System.out.println("Год " + Year + " високосный");
-        } else {
-            System.out.println("Год " + Year + " не високосный");
-        }
+        } else System.out.println("Год " + Year + " не високосный");
 
     }
 }
